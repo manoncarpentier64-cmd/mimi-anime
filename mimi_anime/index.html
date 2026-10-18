@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100b18">
+<title>Mimi Anime — Ton univers anime</title>
+<style>
+:root{--bg:#0b0911;--panel:#171120;--panel2:#21152f;--purple:#8c45ff;--pink:#ed62ce;--text:#f8f4ff;--muted:#b7aabe;--line:#39264d;--green:#73ff66}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#2a1241 0,transparent 34%),var(--bg);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:24px;padding:14px clamp(16px,4vw,58px);background:#100b18eF;border-bottom:1px solid #ffffff12;backdrop-filter:blur(16px)}.logo{font-size:24px;font-weight:950;letter-spacing:-1.2px;white-space:nowrap}.logo span{color:#b783ff}.logo small{display:block;font-size:10px;letter-spacing:4px;color:var(--green);line-height:1;margin-top:-3px}.nav{display:flex;gap:5px;padding:5px;background:#ffffff0a;border:1px solid #ffffff15;border-radius:28px}.nav button{background:transparent;color:#c8bdcf;border:0;padding:9px 14px;border-radius:22px}.nav button.active,.nav button:hover{background:#51228b;color:white}.search{margin-left:auto;position:relative;min-width:170px;max-width:300px;width:100%}.search input{width:100%;border-radius:25px;border:1px solid #ffffff20;background:#211827;color:white;padding:11px 16px 11px 38px;outline:none}.search:before{content:"⌕";position:absolute;left:14px;top:5px;font-size:24px;color:#bca8d1}.user{border:1px solid #ffffff20;border-radius:24px;padding:9px 13px;white-space:nowrap;color:#e7ddef;background:#ffffff08}.hero{min-height:540px;position:relative;display:flex;align-items:center;padding:60px clamp(20px,5vw,76px);overflow:hidden;background:linear-gradient(90deg,#100b18 0%,#100b18e8 27%,#100b1859 68%,#100b18a8 100%),radial-gradient(ellipse at 72% 40%,#8d2548 0,#4d1b6b 30%,#171326 68%)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg),transparent 32%),repeating-linear-gradient(125deg,transparent 0 100px,#ffffff05 101px 103px);pointer-events:none}.hero-art{position:absolute;right:5%;top:5%;height:95%;width:53%;display:flex;align-items:center;justify-content:center;opacity:.8;pointer-events:none}.hero-art .orb{width:min(42vw,440px);aspect-ratio:1;border-radius:48% 52% 60% 40%;background:radial-gradient(circle at 35% 30%,#ffd7e9,#ff5a9a 15%,#7025b8 42%,#1b102b 70%);filter:drop-shadow(0 0 70px #a12dff66);transform:rotate(-13deg)}.hero-art .orb:after{content:"✦";display:block;font-size:160px;color:#ffffffa8;text-align:center;padding-top:20%}.hero-content{position:relative;max-width:650px;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #9b4dff88;background:#36164f99;padding:6px 13px;border-radius:24px;font-size:12px;font-weight:800;letter-spacing:.5px}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}h1{font-size:clamp(44px,7vw,88px);line-height:.98;letter-spacing:-4px;margin:18px 0 15px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0}.chip{background:#ffffff16;border:1px solid #ffffff12;padding:5px 10px;border-radius:8px;font-size:12px;color:#eee4f6}.description{max-width:580px;color:#e1d7e8;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.primary,.secondary{border-radius:15px;padding:13px 20px;border:1px solid transparent;font-weight:800}.primary{background:linear-gradient(120deg,#9d51ff,#6f2bd6);color:white;box-shadow:0 8px 30px #7b2bea40}.secondary{background:#2d193e;border-color:#7442a0;color:#fff}.primary:hover,.secondary:hover{transform:translateY(-1px);filter:brightness(1.1)}.feature-strip{display:flex;gap:10px;overflow:auto;padding:0 clamp(20px,5vw,76px) 28px;margin-top:-5px;position:relative}.feature{min-width:155px;max-width:210px;display:flex;align-items:center;gap:10px;background:#ffffff0d;border:1px solid #ffffff17;border-radius:14px;padding:9px 12px;text-align:left;color:white}.feature.selected{border-color:#70ff66;background:#42235b}.mini-poster{width:38px;height:48px;flex-shrink:0;border-radius:8px;display:grid;place-items:center;font-size:21px;background:linear-gradient(140deg,#412079,#d64280)}.feature strong{font-size:12px}.section{padding:24px clamp(20px,5vw,76px) 42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:20px}.section-head h2{margin:0;font-size:27px;letter-spacing:-.8px}.kicker{color:var(--green);font-size:11px;font-weight:900;letter-spacing:2px}.muted{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:17px}.anime-card{min-width:0;position:relative;background:linear-gradient(180deg,#20152b,#130f1b);border:1px solid #ffffff12;border-radius:16px;overflow:hidden;transition:.2s}.anime-card:hover{transform:translateY(-4px);border-color:#9d55e6}.poster{aspect-ratio:3/4;position:relative;display:flex;align-items:end;padding:14px;background:var(--poster,linear-gradient(140deg,#3b1a5b,#d74e85));overflow:hidden}.poster:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,#ffffff66,transparent 20%),linear-gradient(0deg,#0b0714ed,transparent 65%)}.poster .symbol{position:absolute;top:14%;left:0;right:0;text-align:center;font-size:clamp(42px,6vw,76px);filter:drop-shadow(0 5px 14px #0008)}.poster-title{position:relative;font-size:22px;font-weight:950;line-height:1.05;text-shadow:0 2px 9px #000}.card-body{padding:12px}.card-body h3{font-size:15px;margin:0 0 5px}.card-body p{font-size:12px;color:var(--muted);margin:0}.card-actions{display:flex;gap:7px;margin-top:11px}.small-btn{flex:1;border-radius:9px;padding:8px 7px;border:1px solid #ffffff1c;background:#ffffff08;color:#fff;font-size:12px}.small-btn:hover{background:#51228b}.heart{position:absolute;right:10px;top:10px;z-index:2;border:1px solid #ffffff35;background:#150d22cc;color:#fff;border-radius:50%;width:36px;height:36px;font-size:19px}.heart.saved{color:#ff76c9;border-color:#ff76c9}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 20px}.toolbar input,.toolbar select{background:#191221;border:1px solid #493257;color:white;padding:10px 13px;border-radius:11px;outline:none}.toolbar input{flex:1;min-width:180px}.toolbar select{min-width:140px}.page{display:none}.page.active{display:block}.empty{padding:45px 20px;text-align:center;border:1px dashed #67477c;border-radius:16px;color:var(--muted)}.schedule{display:grid;gap:12px}.day{display:grid;grid-template-columns:130px 1fr;gap:18px;align-items:start;padding:18px;background:#171120;border:1px solid #ffffff12;border-radius:14px}.day h3{margin:0;color:#d4a7ff}.episode{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #ffffff10}.episode:last-child{border:0}.episode small{color:var(--muted)}footer{padding:28px clamp(20px,5vw,76px);border-top:1px solid #ffffff12;color:#a99ab5;font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.modal{display:none;position:fixed;inset:0;z-index:50;background:#05030be8;backdrop-filter:blur(8px);padding:20px;overflow:auto}.modal.open{display:grid;place-items:center}.modal-box{max-width:720px;width:100%;background:#171120;border:1px solid #65427b;border-radius:20px;padding:25px;position:relative}.close{position:absolute;right:17px;top:12px;background:#ffffff10;color:white;border:0;border-radius:50%;width:36px;height:36px;font-size:20px}.modal-box h2{font-size:32px;margin:0 45px 6px 0}.modal-box .notice{background:#251735;border-left:3px solid var(--purple);padding:12px 14px;border-radius:8px;color:#e0d1ed}.episode-list{display:grid;gap:9px;margin-top:16px}.episode-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px;background:#ffffff08;border:1px solid #ffffff12;border-radius:10px}.episode-link a{color:#cda8ff;text-decoration:underline}.tiny{font-size:12px;color:var(--muted)}@media(max-width:1000px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.topbar{gap:10px}.nav button{padding:8px 10px}.hero{min-height:500px}.hero-art{right:-10%;width:60%;opacity:.45}}@media(max-width:650px){.topbar{flex-wrap:wrap}.logo{font-size:21px}.nav{order:3;width:100%;justify-content:space-around}.nav button{font-size:12px;padding:8px}.search{max-width:none;flex:1}.user{display:none}.hero{min-height:510px;padding-top:45px;padding-bottom:70px}.hero-art{width:100%;right:-30%;opacity:.25}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.card-body{padding:10px}.card-body h3{font-size:13px}.poster-title{font-size:19px}h1{letter-spacing:-2px}.description{font-size:15px}.section-head h2{font-size:23px}.day{grid-template-columns:1fr;gap:8px}.feature{min-width:145px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="#" aria-label="Mimi Anime accueil">Mimi<span>Anime</span><small>TON UNIVERS ANIME</small></a>
+  <nav class="nav" aria-label="Navigation principale">
+    <button class="active" data-page="home">⌂ Accueil</button>
+    <button data-page="catalog">▦ Catalogue</button>
+    <button data-page="planning">▦ Planning</button>
+    <button data-page="favorites">♡ Favoris <span id="favCount"></span></button>
+  </nav>
+  <label class="search"><input id="globalSearch" type="search" placeholder="Rechercher un anime…"></label>
+  <div class="user">🎀 Mimi</div>
+</header>
+
+<main>
+<section class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-art"><div class="orb"></div></div>
+    <div class="hero-content">
+      <span class="eyebrow"><span class="dot"></span> À LA UNE · SÉLECTION MIMI</span>
+      <h1 id="heroTitle">Solo Leveling</h1>
+      <div class="meta"><span class="chip" id="heroYear">2024</span><span class="chip" id="heroGenre">Action</span><span class="chip">Fantasy</span><span class="chip">🇫🇷 VF / 🇯🇵 VOSTFR selon disponibilité</span></div>
+      <p class="description" id="heroDescription">Dans un monde où des chasseurs affrontent des monstres, Sung Jinwoo découvre une capacité qui pourrait changer son destin.</p>
+      <div class="actions"><button class="primary" id="heroDetails">▶ Découvrir l'anime</button><button class="secondary" id="heroFav">＋ Ajouter aux favoris</button></div>
+    </div>
+  </div>
+  <div class="feature-strip" id="featureStrip"></div>
+  <section class="section">
+    <div class="section-head"><div><div class="kicker">✦ À DÉCOUVRIR</div><h2>Les animes populaires</h2></div><button class="secondary" data-goto="catalog">Voir le catalogue →</button></div>
+    <div class="cards" id="homeCards"></div>
+  </section>
+</section>
+
+<section class="page" id="page-catalog">
+  <section class="section">
+    <div class="section-head"><div><div class="kicker">⌕ EXPLORATION</div><h2>Catalogue d'animes</h2><p class="muted">Trouve ta prochaine série préférée.</p></div></div>
+    <div class="toolbar"><input id="catalogSearch" type="search" placeholder="Titre, genre…"><select id="genreFilter"><option value="">Tous les genres</option><option>Action</option><option>Fantasy</option><option>Aventure</option><option>Comédie</option><option>Drame</option><option>Surnaturel</option></select><select id="sortFilter"><option value="az">Titre A → Z</option><option value="za">Titre Z → A</option><option value="year">Année récente</option></select></div>
+    <div class="cards" id="catalogCards"></div>
+    <div class="empty" id="catalogEmpty" hidden>Aucun anime trouvé. Essaie une autre recherche.</div>
+  </section>
+</section>
+
+<section class="page" id="page-favorites">
+  <section class="section">
+    <div class="section-head"><div><div class="kicker">♡ TA COLLECTION</div><h2>Mes favoris</h2><p class="muted">Tes choix sont conservés sur cet appareil.</p></div></div>
+    <div class="cards" id="favoriteCards"></div><div class="empty" id="favoriteEmpty" hidden>Tu n'as pas encore de favoris. Appuie sur ♡ sur une fiche anime pour en ajouter.</div>
+  </section>
+</section>
+
+<section class="page" id="page-planning">
+  <section class="section">
+    <div class="section-head"><div><div class="kicker">▦ CALENDRIER</div><h2>Planning de visionnage</h2><p class="muted">Exemple de planning à personnaliser. Les dates de sortie ne sont pas vérifiées en direct.</p></div></div>
+    <div class="schedule" id="schedule"></div>
+    <p class="tiny">Astuce : vérifie les dates exactes sur le site officiel de chaque série ou plateforme.</p>
+  </section>
+</section>
+</main>
+
+<footer><span>© <span id="yearNow"></span> Mimi Anime · Fan project indépendant</span><span>Les droits des œuvres appartiennent à leurs ayants droit. Les liens de visionnage doivent pointer vers des sources autorisées.</span></footer>
+
+<div class="modal" id="animeModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <button class="close" id="closeModal" aria-label="Fermer">×</button>
+    <div class="kicker">FICHE ANIME</div><h2 id="modalTitle"></h2><p class="muted" id="modalMeta"></p><p id="modalDescription"></p>
+    <div class="actions"><button class="primary" id="modalFav">♡ Ajouter aux favoris</button><a class="secondary" id="officialSearch" target="_blank" rel="noopener noreferrer">Trouver une plateforme officielle ↗</a></div>
+    <div class="notice" style="margin-top:18px">Les disponibilités varient selon le pays et la série. Utilise uniquement les plateformes officielles ou les liens fournis par les ayants droit.</div>
+    <h3>Épisodes / visionnage</h3>
+    <div class="episode-list" id="episodeList"></div>
+    <p class="tiny">Cette version de départ n'héberge aucune vidéo. Pour ajouter un lecteur, utilise uniquement une vidéo que tu possèdes ou que tu as le droit de diffuser.</p>
+  </div>
+</div>
+<script>
+const animeList = [
+ {id:"solo",title:"Solo Leveling",year:2024,genres:["Action","Fantasy"],symbol:"⚔️",colors:["#3b1b58","#e43f5f"],description:"Dans un monde où des chasseurs affrontent des monstres, Sung Jinwoo découvre une capacité qui pourrait changer son destin.",featured:true},
+ {id:"jujutsu",title:"Jujutsu Kaisen",year:2020,genres:["Action","Surnaturel"],symbol:"✦",colors:["#102a4e","#9d4dba"],description:"Yuji Itadori se retrouve plongé dans le monde dangereux des fléaux et de l'exorcisme."},
+ {id:"demon",title:"Demon Slayer",year:2019,genres:["Action","Aventure"],symbol:"☯",colors:["#0b5554","#d64d62"],description:"Tanjiro rejoint les pourfendeurs de démons pour protéger sa sœur et chercher un remède."},
+ {id:"onepiece",title:"One Piece",year:1999,genres:["Aventure","Action"],symbol:"☠",colors:["#124e82","#e3a33a"],description:"Luffy et son équipage prennent la mer à la recherche du légendaire trésor One Piece."},
+ {id:"chainsaw",title:"Chainsaw Man",year:2022,genres:["Action","Surnaturel"],symbol:"⛓",colors:["#6d1c2e","#ed7d35"],description:"Denji voit sa vie bouleversée après une alliance inattendue avec un démon-tronçonneuse."},
+ {id:"spy",title:"Spy x Family",year:2022,genres:["Comédie","Action"],symbol:"⌁",colors:["#2d665b","#d8b65c"],description:"Un espion, une télépathe et une assassine forment une famille pas comme les autres."},
+ {id:"frieren",title:"Frieren",year:2023,genres:["Fantasy","Aventure"],symbol:"✧",colors:["#285b8c","#b8d5e8"],description:"Après la grande aventure, une mage elfique découvre le sens du temps et des liens humains."},
+ {id:"haikyuu",title:"Haikyu!!",year:2014,genres:["Comédie","Drame"],symbol:"🏐",colors:["#db6a22","#143f69"],description:"Une équipe de volley tente de se dépasser grâce à l'énergie de ses joueurs."},
+ {id:"deathnote",title:"Death Note",year:2006,genres:["Drame","Surnaturel"],symbol:"☾",colors:["#171721","#a33a49"],description:"Un carnet mystérieux entraîne Light dans un duel intellectuel aux conséquences immenses."},
+ {id:"mha",title:"My Hero Academia",year:2016,genres:["Action","Aventure"],symbol:"★",colors:["#256a67","#b9d5de"],description:"Dans un monde où les pouvoirs sont courants, Izuku rêve de devenir un héros."}
+];
+const $=s=>document.querySelector(s);
+const $$=s=>[...document.querySelectorAll(s)];
+let favorites = new Set();
+try { favorites = new Set(JSON.parse(localStorage.getItem("mimiAnimeFavorites")||"[]")); } catch(e) {}
+let selectedAnime = animeList[0];
+function saveFavorites(){localStorage.setItem("mimiAnimeFavorites",JSON.stringify([...favorites]));updateFavCount();renderFavorites();renderCards($("#homeCards"),animeList.slice(0,5));renderCards($("#catalogCards"),filteredAnime());}
+function updateFavCount(){$("#favCount").textContent=favorites.size?`(${favorites.size})`:"";}
+function posterStyle(a){return `linear-gradient(140deg,${a.colors[0]},${a.colors[1]})`;}
+function card(a){return `<article class="anime-card"><button class="heart ${favorites.has(a.id)?"saved":""}" data-fav="${a.id}" aria-label="Ajouter ${a.title} aux favoris">${favorites.has(a.id)?"♥":"♡"}</button><div class="poster" style="--poster:${posterStyle(a)}"><div class="symbol">${a.symbol}</div><div class="poster-title">${a.title}</div></div><div class="card-body"><h3>${a.title}</h3><p>${a.year} · ${a.genres.join(" / ")}</p><div class="card-actions"><button class="small-btn" data-details="${a.id}">Détails</button><button class="small-btn" data-watch="${a.id}">Où regarder ?</button></div></div></article>`;}
+function renderCards(el,items){el.innerHTML=items.map(card).join("");bindCardButtons(el);}
+function bindCardButtons(el){el.querySelectorAll("[data-fav]").forEach(b=>b.onclick=()=>{const id=b.dataset.fav;favorites.has(id)?favorites.delete(id):favorites.add(id);saveFavorites();});el.querySelectorAll("[data-details]").forEach(b=>b.onclick=()=>openAnime(b.dataset.details));el.querySelectorAll("[data-watch]").forEach(b=>b.onclick=()=>openAnime(b.dataset.watch));}
+function filteredAnime(){let q=$("#catalogSearch").value.trim().toLowerCase(),g=$("#genreFilter").value,s=$("#sortFilter").value;let arr=animeList.filter(a=>(!q||(a.title+" "+a.genres.join(" ")).toLowerCase().includes(q))&&(!g||a.genres.includes(g)));arr.sort(s==="za"?(a,b)=>b.title.localeCompare(a.title):s==="year"?(a,b)=>b.year-a.year:(a,b)=>a.title.localeCompare(b.title));return arr;}
+function renderCatalog(){let arr=filteredAnime();renderCards($("#catalogCards"),arr);$("#catalogEmpty").hidden=arr.length>0;}
+function renderFavorites(){const arr=animeList.filter(a=>favorites.has(a.id));renderCards($("#favoriteCards"),arr);$("#favoriteEmpty").hidden=arr.length>0;}
+function setHero(a){selectedAnime=a;$("#heroTitle").textContent=a.title;$("#heroYear").textContent=a.year;$("#heroGenre").textContent=a.genres[0];$("#heroDescription").textContent=a.description;$("#heroFav").textContent=favorites.has(a.id)?"♥ Retirer des favoris":"＋ Ajouter aux favoris";$(".hero").style.background=`linear-gradient(90deg,#100b18 0%,#100b18e8 27%,#100b1859 68%,#100b18a8 100%),radial-gradient(ellipse at 72% 40%,${a.colors[1]} 0,#4d1b6b 35%,#171326 70%)`;$("#heroDetails").onclick=()=>openAnime(a.id);$("#heroFav").onclick=()=>{favorites.has(a.id)?favorites.delete(a.id):favorites.add(a.id);saveFavorites();setHero(a);};}
+function openAnime(id){const a=animeList.find(x=>x.id===id);if(!a)return;selectedAnime=a;$("#modalTitle").textContent=a.title;$("#modalMeta").textContent=`${a.year} · ${a.genres.join(" · ")}`;$("#modalDescription").textContent=a.description;$("#officialSearch").href="https://www.google.com/search?q="+encodeURIComponent(a.title+" anime plateforme officielle streaming France");$("#modalFav").textContent=favorites.has(id)?"♥ Retirer des favoris":"♡ Ajouter aux favoris";$("#modalFav").onclick=()=>{favorites.has(id)?favorites.delete(id):favorites.add(id);saveFavorites();$("#modalFav").textContent=favorites.has(id)?"♥ Retirer des favoris":"♡ Ajouter aux favoris";};$("#episodeList").innerHTML=`<div class="episode-link"><span>Épisodes et disponibilité</span><a href="${$("#officialSearch").href}" target="_blank" rel="noopener noreferrer">Rechercher les sources officielles ↗</a></div><div class="episode-link"><span>Site officiel / informations</span><a href="https://www.google.com/search?q=${encodeURIComponent(a.title+" site officiel anime")}" target="_blank" rel="noopener noreferrer">Rechercher ↗</a></div>`;$("#animeModal").classList.add("open");}
+function showPage(page){$$(".page").forEach(p=>p.classList.toggle("active",p.id==="page-"+page));$$("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===page));if(page==="catalog")renderCatalog();if(page==="favorites")renderFavorites();window.scrollTo({top:0,behavior:"smooth"});}
+$$("[data-page]").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
+$$("[data-goto]").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.goto)));
+$("#globalSearch").addEventListener("keydown",e=>{if(e.key==="Enter"){showPage("catalog");$("#catalogSearch").value=e.target.value;renderCatalog();}});
+$("#catalogSearch").addEventListener("input",renderCatalog);$("#genreFilter").addEventListener("change",renderCatalog);$("#sortFilter").addEventListener("change",renderCatalog);
+$("#closeModal").onclick=()=>$("#animeModal").classList.remove("open");$("#animeModal").addEventListener("click",e=>{if(e.target.id==="animeModal")e.currentTarget.classList.remove("open")});document.addEventListener("keydown",e=>{if(e.key==="Escape")$("#animeModal").classList.remove("open")});
+$("#featureStrip").innerHTML=animeList.slice(0,5).map(a=>`<button class="feature ${a.id===selectedAnime.id?"selected":""}" data-feature="${a.id}"><span class="mini-poster" style="background:${posterStyle(a)}">${a.symbol}</span><strong>${a.title}</strong></button>`).join("");
+$("#featureStrip").querySelectorAll("[data-feature]").forEach(b=>b.onclick=()=>{setHero(animeList.find(a=>a.id===b.dataset.feature));$$(".feature").forEach(x=>x.classList.toggle("selected",x===b));});
+$("#schedule").innerHTML=[["Lundi",[["À personnaliser","Ajoute ici une sortie officielle"]]],["Mardi",[["À personnaliser","Ajoute ici une sortie officielle"]]],["Mercredi",[["À personnaliser","Ajoute ici une sortie officielle"]]],["Jeudi",[["À personnaliser","Ajoute ici une sortie officielle"]]],["Vendredi",[["À personnaliser","Ajoute ici une sortie officielle"]]],["Week-end",[["Marathon anime","Choisis une série de ta liste"]]]].map(([day,eps])=>`<div class="day"><h3>${day}</h3><div>${eps.map(([title,desc])=>`<div class="episode"><span><strong>${title}</strong><br><small>${desc}</small></span><small>Planning perso</small></div>`).join("")}</div></div>`).join("");
+$("#yearNow").textContent=new Date().getFullYear();setHero(animeList[0]);updateFavCount();renderCards($("#homeCards"),animeList.slice(0,5));renderCatalog();renderFavorites();
+</script>
+</body>
+</html>
